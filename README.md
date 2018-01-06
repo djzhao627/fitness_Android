@@ -19,4 +19,4 @@ Android健身app，在普通健身app的基础上加入了社交功能（类似K
 ### Preview
 ---
 
-[Click to preview](https://github.com/djzhao627/fitness_Android/tree/master/Preview "Preview")
+[Click to preview](https://github.com/djzhao627/fitness_Android/tree/master/Preview/readme.md)
