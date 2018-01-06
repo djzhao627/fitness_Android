@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--login-->
+    <item type="drawable" name="edit_text_gray_normal">#88f1f1f1</item>
+
+    <!--login-->
+
+    <item type="drawable" name="dd_edit_text_bg_white">#ffffffff</item>
+    <item type="drawable" name="search_list_normal">#ffe6e6e6</item>
+    <item type="drawable" name="category_odd_row_normal">#ffffffff</item>
+    <item type="drawable" name="category_even_row_normal">#ffffffff</item>
+    <item type="drawable" name="product_odd_row_normal">#ffffffff</item>
+    <item type="drawable" name="product_even_row_normal">#ffffffff</item>
+    <item type="drawable" name="list_row_mormal">#ffffffff</item>
+    <item type="drawable" name="list_row_zeng">#fffffddd</item>
+    <item type="drawable" name="list_row_pressed">#ffeeeeee</item>
+    <item type="drawable" name="none">#00000000</item>
+    <item type="drawable" name="coupon_list_row_pressed">#ffefefef</item>
+    <item type="drawable" name="product_detail_row_pressed">#ffeeeeee</item>
+    <item type="drawable" name="fill_order_tab_item_red">@color/red</item>
+    <item type="drawable" name="pdn_card_select_color">#ffefefef</item>
+    <item type="drawable" name="pdn_comment_tab_n">#fff9f9f9</item>
+    <item type="drawable" name="pdn_comment_tab_p">#fff3f3f3</item>
+    <item type="drawable" name="pd_card_select_color">#ffefefef</item>
+    <item type="drawable" name="pd_deliver_h">#ffdedede</item>
+    <item type="drawable" name="pd_deliver_v">#ffcfd8e4</item>
+    <item type="drawable" name="pd_shadow">#80000000</item>
+    <item type="drawable" name="empty">#00ffffff</item>
+    <item type="drawable" name="lib_phone_charge_none">#ffffffff</item>
+    <item type="drawable" name="lib_phone_charge_arrow_pressed">#ffff4244</item>
+</resources>

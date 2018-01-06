@@ -1,0 +1,77 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="layout_title">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="title_right_button">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/promotion_right_button_background_selector</item>
+        <item name="android:layout_width">80.0dip</item>
+    </style>
+
+    <style name="MyDialogStyle_center">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="Fuxk_24px_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/dd_dimen_24px</item>
+    </style>
+
+    <style name="Fuxk_Base_Content_Gray_Black_Style" parent="@style/Fuxk_24px_TextView">
+        <item name="android:textColor">@color/fuxk_base_color_gray_black</item>
+    </style>
+
+    <style name="Fuxk_28px_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/dd_dimen_28px</item>
+    </style>
+
+    <style name="Fuxk_Base_Content_28_Style" parent="@style/Fuxk_28px_TextView">
+        <item name="android:textColor">@color/fuxk_base_color_black</item>
+    </style>
+
+    <style name="Fuxk_Base_Content_24_Style" parent="@style/Fuxk_24px_TextView">
+        <item name="android:textColor">@color/fuxk_base_color_black</item>
+    </style>
+
+    <style name="Fuxk_32px_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/dd_dimen_32px</item>
+    </style>
+
+    <style name="Fuxk_Base_Title_Sub_Gray_Style" parent="@style/Fuxk_32px_TextView">
+        <item name="android:textColor">@color/fuxk_base_color_gray</item>
+    </style>
+
+    <style name="Fuxk_Base_Title_Sub_Style" parent="@style/Fuxk_32px_TextView">
+        <item name="android:textColor">@color/fuxk_base_color_black</item>
+    </style>
+
+    <style name="Fuxk_Base_Tip_Gray_Style" parent="@style/Fuxk_24px_TextView">
+        <item name="android:textColor">@color/fuxk_base_color_gray</item>
+    </style>
+
+    <style name="Fuxk_Base_Content_32_Style" parent="@style/Fuxk_32px_TextView">
+        <item name="android:textColor">@color/fuxk_base_color_black</item>
+    </style>
+
+    <style name="Fuxk_Base_Content_28px_Gray_Black_Style" parent="@style/Fuxk_28px_TextView">
+        <item name="android:textColor">@color/fuxk_base_color_gray_black</item>
+    </style>
+
+</resources>

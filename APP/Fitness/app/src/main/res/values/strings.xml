@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">肌撕裂者</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">欢迎来到 肌撕裂者</string>
+
+    <!-- 欢迎页面 -->
+    <string name="go_fitness">躁起来~ ！</string>
+    <!-- 欢迎页面 -->
+
+    <!--登录/注册-->
+    <string name="username">用户名</string>
+    <string name="login_txt">登录</string>
+    <string name="register_txt">注册</string>
+    <string name="sex">性别</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="height">身高</string>
+    <string name="weight">体重</string>
+    <string name="password">密码</string>
+    <string name="repassword">确认密码</string>
+    <string name="hint_username">请输入用户名</string>
+    <string name="hint_password">请输入密码</string>
+    <string name="hint_repassword">再次请输入密码</string>
+    <string name="hint_height">你的身高</string>
+    <string name="hint_weight">你的体重</string>
+    <!--登录/注册-->
+
+    <!--锻炼-->
+    <string name="level_base_title"> 基础训练</string>
+    <string name="level_base_head">肌撕裂者 - 初级</string>
+    <string name="level_base_info">8分钟   40千卡   L1初级</string>
+    <string name="level_enhance_title"> 进击训练</string>
+    <string name="level_enhance_head">肌撕裂者 - 中级</string>
+    <string name="level_enhance_info">9分钟   60千卡   L3中级</string>
+    <string name="level_acme_title"> 魔鬼训练</string>
+    <string name="level_acme_head">肌撕裂者 - 极致</string>
+    <string name="level_acme_info">11分钟   100千卡   L5高级</string>
+    <!--锻炼-->
+    
+    <!--发现-->
+    <string name="slash">/</string>
+    <string name="found_top_info">分享肌肉撕裂心得</string>
+    <string name="found_list_top_title"> 经验分享 </string>
+    <!--发现-->
+
+    <!--我的-->
+    <string name="me_homepage_text">我的主页</string>
+    <string name="me_exercise_unit">锻炼时间 / 分钟</string>
+    <string name="me_record_uint">累计打卡 / 天</string>
+    <string name="me_exit_text">退出登录</string>
+    <string name="me_comment_text">我的评论</string>
+    <string name="me_record_text">打卡记录</string>
+    <string name="me_favor_text">我的收藏</string>
+    <string name="me_record_number">0</string>
+    <string name="me_app_version">V1.0</string>
+    <!--我的-->
+
+
+    <!-- 首页 -->
+    <string name="bottom_train">锻炼</string>
+    <string name="bottom_found">发现</string>
+    <string name="bottom_me">我的</string>
+    <string name="title_train">锻炼</string>
+    <string name="title_found">发现</string>
+    <string name="title_me">我的</string>
+    <!-- 首页 -->
+
+    <!--打卡-->
+    <string name="date_check_text">今日打卡</string>
+    <string name="before_date_check_text">每日打卡</string>
+    <!--打卡-->
+    
+    <!--新鲜事-->
+    <string name="add_news_btn_release_txt">发布</string>
+    <string name="add_news_et_title_hint_text">标题</string>
+    <string name="add_news_et_hint_text">晒改变、晒心得、晒运动，晒晒晒...</string>
+    <!--新鲜事-->
+
+    <!--服务器-->
+    <string name="config_server_config_title">服务器</string>
+    <string name="config_server_config_ip">IP地址:</string>
+    <string name="config_server_config_ip_hint">输入服务器IP地址</string>
+    <string name="config_server_config_port">端口号:</string>
+    <string name="config_server_config_port_hint">输入服务器的端口号</string>
+    <string name="config_btn_save_txt">保存</string>
+    <!--服务器-->
+
+    <!--个人主页-->
+    <string name="homepage_can_not_modify">不可修改</string>
+    <string name="homepage_btn_update">更新</string>
+    <string-array name="sex_array">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <!--个人主页-->
+
+    <!--新鲜事详细-->
+    <string name="new_detail_comment">全部评论</string>
+    <string name="new_detail_add_comment">评论</string>
+    <string name="new_detail_add_favor">收藏</string>
+    <string name="new_detail_add_comment_hint">发表回复...</string>
+    <!--新鲜事详细-->
+
+    <string name="loading_summary">正在努力的加载中...</string>
+
+
+</resources>
