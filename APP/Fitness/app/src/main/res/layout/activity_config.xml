@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gainsboro"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_custom" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/config_server_config_title" />
+
+            <!--IP Address-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/config_server_config_ip" />
+
+                <EditText
+                    android:id="@id/config_et_ip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:hint="@string/config_server_config_ip_hint"
+                    android:inputType="textUri"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <!--IP Address-->
+            <!--split-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/darkgrey" />
+            <!--split-->
+            <!--Server Port-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/config_server_config_port" />
+
+                <EditText
+                    android:id="@id/config_et_port"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:hint="@string/config_server_config_port_hint"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <!--Server Port-->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@id/config_btn_save"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="@dimen/login_comfirm_button_margin_top"
+        android:layout_marginLeft="@dimen/login_comfirm_button_margin_top"
+        android:layout_marginRight="@dimen/login_comfirm_button_margin_top"
+        android:layout_marginTop="@dimen/login_comfirm_button_margin_top"
+        android:background="@drawable/btn_red_bg"
+        android:gravity="center"
+        android:text="@string/config_btn_save_txt"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_comfirm_button_text_size" />
+
+</LinearLayout>

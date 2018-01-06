@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="@color/title_bg">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/cart_edit_btn_selector"
+        android:clickable="true"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:paddingRight="8.0dip">
+
+        <ImageView
+            android:id="@id/up_btn_check"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:layout_gravity="right"
+            android:adjustViewBounds="true"
+            android:padding="5.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/web_share_more" />
+
+        <ImageView
+            android:id="@id/found_new_add"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:layout_gravity="right"
+            android:adjustViewBounds="true"
+            android:padding="5.0dip"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:src="@drawable/icon_add" />
+
+        <TextView
+            android:id="@id/share_name"
+            style="@style/layout_title"
+            android:layout_width="wrap_content"
+            android:maxLines="1"
+            android:visibility="gone"
+            android:padding="10.0dip" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@id/titleText"
+        style="@style/layout_title"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="true"
+        android:maxLines="1"
+        android:padding="10.0dip"
+        android:text="@string/app_name" />
+
+</RelativeLayout>

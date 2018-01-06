@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_custom" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/aliceblue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <!--top-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/title_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/man"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:maxWidth="20dp"
+                    android:src="@drawable/fitness_round" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@id/homepage_tv_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/app_name"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/homepage_can_not_modify"
+                        android:textColor="@color/lightblue"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--top-->
+            <!--change-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/height" />
+
+                <EditText
+                    android:id="@id/homepage_et_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/weight" />
+
+                <EditText
+                    android:id="@id/homepage_et_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/sex" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@id/homepage_radio_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@id/homepage_rd_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dd_dimen_90px"
+                            android:layout_margin="@dimen/dd_dimen_6px"
+                            android:checked="true"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/dd_dimen_6px"
+                            android:paddingRight="@dimen/dd_dimen_6px"
+                            android:text="@string/male"></RadioButton>
+
+                        <RadioButton
+                            android:id="@id/homepage_rd_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dd_dimen_90px"
+                            android:layout_margin="@dimen/dd_dimen_6px"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/dd_dimen_6px"
+                            android:paddingRight="@dimen/dd_dimen_6px"
+                            android:text="@string/female"></RadioButton>
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <!--change-->
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@id/homepage_btn_update"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="@dimen/login_comfirm_button_margin_top"
+        android:layout_marginLeft="@dimen/login_comfirm_button_margin_top"
+        android:layout_marginRight="@dimen/login_comfirm_button_margin_top"
+        android:layout_marginTop="@dimen/login_comfirm_button_margin_top"
+        android:background="@drawable/btn_red_bg"
+        android:gravity="center"
+        android:text="@string/homepage_btn_update"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_comfirm_button_text_size" />
+
+</LinearLayout>

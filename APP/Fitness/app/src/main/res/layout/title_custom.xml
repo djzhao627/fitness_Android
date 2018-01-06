@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="@color/title_bg" >
+
+    <LinearLayout
+        android:id="@id/share_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/cart_edit_btn_selector"
+        android:clickable="true"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingRight="8.0dip" >
+
+        <ImageView
+            android:id="@id/web_share_btn"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:layout_marginRight="10.0dip"
+            android:adjustViewBounds="true"
+            android:padding="5.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/web_share"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@id/web_share_close"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:layout_gravity="right"
+            android:adjustViewBounds="true"
+            android:padding="5.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/web_close"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@id/web_share_more"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:layout_gravity="right"
+            android:adjustViewBounds="true"
+            android:padding="5.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/web_share_more"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@id/web_share_edit"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:layout_gravity="right"
+            android:layout_marginBottom="5dip"
+            android:adjustViewBounds="true"
+            android:padding="5.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/right_edit"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@id/titleRightButton"
+            style="@style/title_right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="34.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="2.0dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/web_share_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="5.0dip"
+            android:gravity="center"
+            android:textSize="@dimen/small_middle_text_size"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="50.0dip"
+        android:layout_height="fill_parent"
+        android:background="#00000000" >
+
+        <ImageView
+            android:id="@id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/top_back_bottom_height"
+            android:layout_gravity="center"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:src="@drawable/title_back_selector" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@id/titleText"
+        style="@style/layout_title"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="10.0dip"
+        android:singleLine="true" />
+
+</RelativeLayout>

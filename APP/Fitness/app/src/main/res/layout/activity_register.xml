@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_custom" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fuxk_base_color_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dd_dimen_30px"
+                android:paddingRight="@dimen/dd_dimen_30px">
+
+                <TextView
+                    android:layout_width="@dimen/dd_dimen_200px"
+                    android:layout_height="fill_parent"
+                    android:background="@color/fuxk_base_color_white"
+                    android:gravity="center_vertical"
+                    android:text="@string/username"
+                    android:textColor="@color/fuxk_base_color_gray_black" />
+
+                <EditText
+                    android:id="@+id/reg_et_username"
+                    style="@style/Fuxk_Base_Content_28_Style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_90px"
+                    android:layout_margin="@dimen/dd_dimen_6px"
+                    android:background="@drawable/bg_edit_text_manage"
+                    android:hint="@string/hint_username"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dd_dimen_6px"
+                    android:paddingRight="@dimen/dd_dimen_6px"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fuxk_base_color_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dd_dimen_30px"
+                android:paddingRight="@dimen/dd_dimen_30px"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="@dimen/dd_dimen_200px"
+                    android:layout_height="fill_parent"
+                    android:background="@color/fuxk_base_color_white"
+                    android:gravity="center_vertical"
+                    android:text="@string/password"
+                    android:textColor="@color/fuxk_base_color_gray_black" />
+
+                <EditText
+                    android:id="@+id/reg_et_password"
+                    style="@style/Fuxk_Base_Content_28_Style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_90px"
+                    android:layout_margin="@dimen/dd_dimen_6px"
+                    android:background="@drawable/bg_edit_text_manage"
+                    android:focusable="true"
+                    android:inputType="textPassword"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dd_dimen_6px"
+                    android:hint="@string/hint_password"
+                    android:paddingRight="@dimen/dd_dimen_6px"
+                    android:maxLines="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fuxk_base_color_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dd_dimen_30px"
+                android:paddingRight="@dimen/dd_dimen_30px"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="@dimen/dd_dimen_200px"
+                    android:layout_height="fill_parent"
+                    android:background="@color/fuxk_base_color_white"
+                    android:gravity="center_vertical"
+                    android:text="@string/repassword"
+                    android:textColor="@color/fuxk_base_color_gray_black" />
+
+                <EditText
+                    android:id="@+id/reg_et_repassword"
+                    style="@style/Fuxk_Base_Content_28_Style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_90px"
+                    android:layout_margin="@dimen/dd_dimen_6px"
+                    android:background="@drawable/bg_edit_text_manage"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_repassword"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/dd_dimen_6px"
+                    android:paddingRight="@dimen/dd_dimen_6px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fuxk_base_color_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dd_dimen_30px"
+                android:paddingRight="@dimen/dd_dimen_30px"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="@dimen/dd_dimen_200px"
+                    android:layout_height="fill_parent"
+                    android:background="@color/fuxk_base_color_white"
+                    android:gravity="center_vertical"
+                    android:text="@string/sex"
+                    android:textColor="@color/fuxk_base_color_gray_black" />
+
+                <RadioGroup
+                    android:id="@+id/radio_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/reg_rd_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dd_dimen_90px"
+                        android:layout_margin="@dimen/dd_dimen_6px"
+                        android:checked="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dd_dimen_6px"
+                        android:paddingRight="@dimen/dd_dimen_6px"
+                        android:text="@string/male"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/reg_rd_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dd_dimen_90px"
+                        android:layout_margin="@dimen/dd_dimen_6px"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dd_dimen_6px"
+                        android:paddingRight="@dimen/dd_dimen_6px"
+                        android:text="@string/female"></RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fuxk_base_color_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dd_dimen_30px"
+                android:paddingRight="@dimen/dd_dimen_30px"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="@dimen/dd_dimen_200px"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/height"
+                    android:textColor="@color/fuxk_base_color_gray_black" />
+
+                <EditText
+                    android:id="@+id/reg_et_height"
+                    style="@style/Fuxk_Base_Content_28_Style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_90px"
+                    android:layout_margin="@dimen/dd_dimen_6px"
+                    android:background="@drawable/bg_edit_text_manage"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_height"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/dd_dimen_6px"
+                    android:paddingRight="@dimen/dd_dimen_6px"
+                    android:maxLines="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fuxk_base_color_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dd_dimen_30px"
+                android:paddingRight="@dimen/dd_dimen_30px"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="@dimen/dd_dimen_200px"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/weight"
+                    android:textColor="@color/fuxk_base_color_gray_black" />
+
+                <EditText
+                    android:id="@+id/reg_et_weight"
+                    style="@style/Fuxk_Base_Content_28_Style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_90px"
+                    android:layout_margin="@dimen/dd_dimen_6px"
+                    android:background="@drawable/bg_edit_text_manage"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_weight"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/dd_dimen_6px"
+                    android:paddingRight="@dimen/dd_dimen_6px" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/reg_btn_register"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="@dimen/login_comfirm_button_margin_top"
+        android:layout_marginLeft="@dimen/login_comfirm_button_margin_top"
+        android:layout_marginRight="@dimen/login_comfirm_button_margin_top"
+        android:layout_marginTop="@dimen/login_comfirm_button_margin_top"
+        android:background="@drawable/btn_red_bg"
+        android:gravity="center"
+        android:text="@string/register_txt"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_comfirm_button_text_size" />
+
+</LinearLayout>

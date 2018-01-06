@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--baseTraining-->
+            <LinearLayout
+                android:id="@id/train_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/level_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/level_title_icon_size"
+                        android:layout_height="@dimen/level_title_icon_size"
+                        android:src="@drawable/ic_free_train" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/level_title_icon_size"
+                        android:layout_marginLeft="@dimen/level_title_margin_left"
+                        android:gravity="center"
+                        android:text="@string/level_base_title"
+                        android:textSize="@dimen/level_info_size" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/level_base" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/level_head_margin_left"
+                        android:layout_marginTop="@dimen/level_head_margin_top"
+                        android:text="@string/level_base_head"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/level_title_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/level_info_margin_left"
+                        android:layout_marginTop="@dimen/level_info_margin_top"
+                        android:text="@string/level_base_info"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/level_info_size" />
+                </FrameLayout>
+            </LinearLayout>
+            <!--baseTraining-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/brown" />
+            <!--enhanceTraining-->
+            <LinearLayout
+                android:id="@id/train_enhance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/level_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/level_title_icon_size"
+                        android:layout_height="@dimen/level_title_icon_size"
+                        android:src="@drawable/ic_free_train" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/level_title_icon_size"
+                        android:layout_marginLeft="@dimen/level_title_margin_left"
+                        android:gravity="center"
+                        android:text="@string/level_enhance_title"
+                        android:textSize="@dimen/level_info_size" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/level_enhance" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/level_head_margin_left"
+                        android:layout_marginTop="@dimen/level_head_margin_top"
+                        android:text="@string/level_enhance_head"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/level_title_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/level_info_margin_left"
+                        android:layout_marginTop="@dimen/level_info_margin_top"
+                        android:text="@string/level_enhance_info"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/level_info_size" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <!--enhanceTraining-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/brown" />
+            <!--acmeTraining-->
+            <LinearLayout
+                android:id="@id/train_acme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/level_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/level_title_icon_size"
+                        android:layout_height="@dimen/level_title_icon_size"
+                        android:src="@drawable/ic_free_train" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/level_title_icon_size"
+                        android:layout_marginLeft="@dimen/level_title_margin_left"
+                        android:gravity="center"
+                        android:text="@string/level_acme_title"
+                        android:textSize="@dimen/level_info_size" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/level_acme" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/level_head_margin_left"
+                        android:layout_marginTop="@dimen/level_head_margin_top"
+                        android:text="@string/level_acme_head"
+                        android:textColor="@color/font_gray"
+                        android:textSize="@dimen/level_title_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/level_info_margin_left"
+                        android:layout_marginTop="@dimen/level_info_margin_top"
+                        android:text="@string/level_acme_info"
+                        android:textColor="@color/font_gray"
+                        android:textSize="@dimen/level_info_size" />
+                </FrameLayout>
+            </LinearLayout>
+            <!--acmeTraining-->
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
