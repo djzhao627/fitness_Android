@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Server</display-name>
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.lilei.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DailyCheckServlet</servlet-name>
+    <servlet-class>com.lilei.servlet.DailyCheckServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CommentServet</servlet-name>
+    <servlet-class>com.lilei.servlet.CommentServet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FavorServlet</servlet-name>
+    <servlet-class>com.lilei.servlet.FavorServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NewsServlet</servlet-name>
+    <servlet-class>com.lilei.servlet.NewsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DownloadServlet</servlet-name>
+    <servlet-class>com.lilei.servlet.DownloadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TrainServlet</servlet-name>
+    <servlet-class>com.lilei.servlet.TrainServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/User</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DailyCheckServlet</servlet-name>
+    <url-pattern>/DailyCheck</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CommentServet</servlet-name>
+    <url-pattern>/Comment</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FavorServlet</servlet-name>
+    <url-pattern>/Favor</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewsServlet</servlet-name>
+    <url-pattern>/News</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DownloadServlet</servlet-name>
+    <url-pattern>/Download</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TrainServlet</servlet-name>
+    <url-pattern>/Train</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/404.html</location>
+  </error-page>
+  
+  <error-page>
+  	<error-code>503</error-code>
+  	<location>/503.html</location>
+  </error-page>
+  
+  
+</web-app>

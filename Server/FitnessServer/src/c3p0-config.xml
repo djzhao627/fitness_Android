@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE c3p0-config>
+<c3p0-config>
+  <default-config>
+     <property name="driverClass">com.mysql.jdbc.Driver</property> 
+     <property name="jdbcUrl">jdbc:mysql:///fitness_mysql</property> 
+     <property name="user">root</property> 
+     <property name="password">888888</property> 
+     <property name="initialPoolSize">5</property> 
+     <property name="maxPoolSize">10</property> 
+
+  </default-config>
+
+</c3p0-config>
