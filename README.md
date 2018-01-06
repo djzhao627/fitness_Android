@@ -9,7 +9,7 @@ Android健身app，在普通健身app的基础上加入了社交功能（类似K
  - 每日打卡模块
  - 个人信息模块
 
-###Tips
+### Tips
 --- 
  - APP的服务器地址请在 `com.lilei.fitness.utils.Constants` 中修改，或者在登录界面按 `菜单键` 进入服务器地址修改界面（Debug用）
 
