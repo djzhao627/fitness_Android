@@ -23,12 +23,6 @@ public class Constants {
 	// 服务器地址
 	public static String BASE_URL = "http://172.16.17.117:8080/FitnessServer/";
 
-	// 图片路径
-	public static final String IMAGE_URL = "http://58.211.5.34:8080/studioms/staticmedia/images/#";
-
-	// 视频路径
-	public static final String VIDEO_URL = "http://58.211.5.34:8080/studioms/staticmedia/video/#";
-
 	// 保存参数文件夹名称
 	public static final String SHARED_PREFERENCE_NAME = "fitness_prefs";
 
