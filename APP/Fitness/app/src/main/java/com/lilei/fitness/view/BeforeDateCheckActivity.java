@@ -64,16 +64,21 @@ public class BeforeDateCheckActivity extends BaseActivity {
                         DisplayToast("暂时无法获取数据");
                         finish();
                     } else {
-                        String[] dates = response.split(",");
-                        if (Constants.DAILYCHECKEDLIST == null) {
-                            Constants.DAILYCHECKEDLIST = new ArrayList<String>();
+                        if (response.length() == 0) {
+                            Constants.DAILYCHECKEDLIST = new ArrayList<>();
+                            Constants.DAILYCHECKEDLIST.add("2000-1-1");
                         } else {
-                            Constants.DAILYCHECKEDLIST.clear();
-                        }
-                        for (String s: dates) {
-                            String[] split = s.split("-");
-                            s = split[0] + "-" + removeHeadingZero(split[1]) + "-" + removeHeadingZero(split[2]);
-                            Constants.DAILYCHECKEDLIST.add(s);
+                            String[] dates = response.split(",");
+                            if (Constants.DAILYCHECKEDLIST == null) {
+                                Constants.DAILYCHECKEDLIST = new ArrayList<String>();
+                            } else {
+                                Constants.DAILYCHECKEDLIST.clear();
+                            }
+                            for (String s : dates) {
+                                String[] split = s.split("-");
+                                s = split[0] + "-" + removeHeadingZero(split[1]) + "-" + removeHeadingZero(split[2]);
+                                Constants.DAILYCHECKEDLIST.add(s);
+                            }
                         }
                         openActivity(DateCheckActivity.class);
                         finish();
