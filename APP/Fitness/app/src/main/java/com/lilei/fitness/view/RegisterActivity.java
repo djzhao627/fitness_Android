@@ -144,15 +144,14 @@ public class RegisterActivity extends BaseActivity implements OnClickListener {
                         return;
                     } else {
                         // 存储用户
-                        Constants.USER = user;
                         boolean result = SharedPreferencesUtils.saveUserInfo(mContext, user);
                         if (result) {
-                            Toast.makeText(mContext, "注册成功，已经自动登录！", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(mContext, "注册成功，请登录！", Toast.LENGTH_SHORT).show();
                         } else {
                             Toast.makeText(mContext, "用户名密码保存失败", Toast.LENGTH_SHORT).show();
                         }
                     }
-                    openActivity(MainActivity.class);
+                    openActivity(LoginActivity.class);
                     AppManager.getInstance().killAllActivity();
                     break;
                 default:
