@@ -51,7 +51,7 @@ public class DailyCheckDao {
 	}
 	
 	public int getTotalTrainingDays(String userId) {
-		sql = "SELECT SUM(duration) FROM training WHERE userId = ?;";
+		sql = "SELECT IFNULL(SUM(duration),0) FROM training WHERE userId = ?;";
 		try {
 			return queryRunner.query(sql, new ScalarHandler<BigDecimal>(), userId).intValue();
 		} catch (SQLException e) {
@@ -74,7 +74,7 @@ public class DailyCheckDao {
 						return sb.substring(0, sb.length() - 1);
 					}
 					else {
-						return "error";
+						return "";
 					}
 				}
 			}, userId);
