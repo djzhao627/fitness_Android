@@ -19,6 +19,7 @@ import com.lilei.entity.Comments;
 import com.lilei.entity.News;
 import com.lilei.entity.NewsDetail;
 import com.lilei.entity.NewsListForFound;
+import com.lilei.utils.Constants;
 
 
 /**
@@ -75,7 +76,7 @@ public class NewsServlet extends BaseMobileServlet {
 					news.setImage(fileName);
 
 					// 获取上传路径：项目目录下的upload文件夹(先创建upload文件夹)
-					String basePath = "C:\\DJZHAO\\WORK\\Workspaces\\FileUpload\\fitness";
+					String basePath = Constants.UPLOAD_PATH;
 
 					// 创建文件对象
 					File file = new File(basePath, fileName);
