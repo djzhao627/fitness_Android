@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.lilei.utils.Constants;
+
 /**
  * 
  * 
@@ -35,7 +37,7 @@ public class DownloadServlet extends HttpServlet {
 			throws ServletException, IOException {
 		String fileName = request.getParameter("imageName");
 		// 获取文件上传路径
-		String basePath = "C:\\DJZHAO\\WORK\\Workspaces\\FileUpload\\fitness";
+		String basePath = Constants.UPLOAD_PATH;
 		// 获取文件
 		File file = new File(basePath, fileName);
 		// 判断文件是否存在
