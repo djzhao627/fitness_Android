@@ -26,7 +26,7 @@ public class CommentsDao {
 	
 	public List<NewsListItem> getCommentsList(String userId) {
 		try {
-			sql= "SELECT DISTINCT c.newsId, title, username FROM `user` a, news b, comments c WHERE a.userId = b.userId AND b.newsId = c.newsId AND a.userId = ?;";
+			sql= "SELECT DISTINCT c.newsId, title, username FROM `user` a, news b, comments c WHERE c.userId = ? AND c.newsId = b.newsId AND b.userId = a.userId;";
 			return queryRunner.query(sql, new BeanListHandler<NewsListItem>(NewsListItem.class), userId);
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
