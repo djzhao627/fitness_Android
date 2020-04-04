@@ -157,7 +157,8 @@ public class DateCheckActivity extends BaseActivity implements View.OnClickListe
             switch (id) {
                 case 1:
                     if (response.contains("success")) {
-                        DisplayToast("今日打卡成功");
+                        DisplayToast("今日打卡成功，获得100积分");
+                        Constants.USER.setIntegral(Constants.USER.getIntegral() + 100);
                     } else {
                         DisplayToast(response);
                     }

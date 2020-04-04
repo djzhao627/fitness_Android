@@ -18,6 +18,8 @@
     <string name="female">女</string>
     <string name="height">身高</string>
     <string name="weight">体重</string>
+    <string name="target_weight">目标体重</string>
+    <string name="age">年龄</string>
     <string name="password">密码</string>
     <string name="repassword">确认密码</string>
     <string name="hint_username">请输入用户名</string>
@@ -25,6 +27,8 @@
     <string name="hint_repassword">再次请输入密码</string>
     <string name="hint_height">你的身高</string>
     <string name="hint_weight">你的体重</string>
+    <string name="hint_target_weight">想要达到的体重</string>
+    <string name="hint_age">你的年龄</string>
     <!--登录/注册-->
 
     <!--锻炼-->
@@ -38,20 +42,27 @@
     <string name="level_acme_head">肌撕裂者 - 极致</string>
     <string name="level_acme_info">11分钟   100千卡   L5高级</string>
     <!--锻炼-->
-    
+
     <!--发现-->
     <string name="slash">/</string>
-    <string name="found_top_info">分享肌肉撕裂心得</string>
+    <string name="found_top_info">肌撕裂者减肥专区</string>
     <string name="found_list_top_title"> 经验分享 </string>
     <!--发现-->
+
+    <!--商城-->
+    <string name="shop_list_tips"> 好物分享 </string>
+    <!--商城-->
 
     <!--我的-->
     <string name="me_homepage_text">我的主页</string>
     <string name="me_exercise_unit">锻炼时间 / 分钟</string>
     <string name="me_record_uint">累计打卡 / 天</string>
     <string name="me_exit_text">退出登录</string>
+    <string name="me_orders_text">我的订单</string>
     <string name="me_comment_text">我的评论</string>
     <string name="me_record_text">打卡记录</string>
+    <string name="me_metabolize_text">基础代谢率</string>
+    <string name="me_calorie_text">食物卡路里</string>
     <string name="me_favor_text">我的收藏</string>
     <string name="me_record_number">0</string>
     <string name="me_app_version">V1.0</string>
@@ -60,10 +71,12 @@
 
     <!-- 首页 -->
     <string name="bottom_train">锻炼</string>
-    <string name="bottom_found">发现</string>
+    <string name="bottom_found">专区</string>
+    <string name="bottom_shop">商城</string>
     <string name="bottom_me">我的</string>
     <string name="title_train">锻炼</string>
-    <string name="title_found">发现</string>
+    <string name="title_found">专区</string>
+    <string name="title_shop">商城</string>
     <string name="title_me">我的</string>
     <!-- 首页 -->
 
@@ -71,7 +84,7 @@
     <string name="date_check_text">今日打卡</string>
     <string name="before_date_check_text">每日打卡</string>
     <!--打卡-->
-    
+
     <!--新鲜事-->
     <string name="add_news_btn_release_txt">发布</string>
     <string name="add_news_et_title_hint_text">标题</string>
@@ -90,20 +103,126 @@
     <!--个人主页-->
     <string name="homepage_can_not_modify">不可修改</string>
     <string name="homepage_btn_update">更新</string>
+    <string name="new_detail_comment">全部评论</string>
+    <!--个人主页-->
+
+    <!--新鲜事详细-->
+    <string name="new_detail_add_comment">评论</string>
+    <string name="new_detail_add_favor">收藏</string>
+    <string name="new_detail_add_comment_hint">发表回复...</string>
+    <string name="loading_summary">正在努力的加载中...</string>
+    <!--新鲜事详细-->
+
+    <!--商品详细-->
+    <string name="goods_detail_add_comment">直接购买</string>
+    <string name="goods_detail_add_favor">积分购买</string>
+    <string name="goods_detail_add_comment_hint">发表回复...</string>
+    <!--商品详细-->
+
+    <!--  代谢率  -->
+    <string name="metabolize_formula">计算公式</string>
+    <string name="metabolize_formula_detail">女性基础代谢率=\n\t\t661+9.6*体重(kg)+1.72*身高(cm)-4.7*年龄\n男性基础代谢率=\n\t\t67+13.73*体重(kg)+5*身高(cm)-6.9*年龄</string>
+    <string name="metabolize_height">身高 (厘米CM)</string>
+    <string name="metabolize_weight">体重 (公斤KG)</string>
+    <string name="metabolize_metabolize_prefix">您的基础代谢率为</string>
+    <string name="metabolize_metabolize_postfix">大卡</string>
+    <string name="metabolize_weight_prefix">您的最优体重为</string>
+    <string name="metabolize_weight_postfix">公斤</string>
+    <string name="metabolize_age">年龄 (岁)</string>
+    <string name="metabolize_btn_calc">计算</string>
+    <!--  代谢率  -->
+
+    <!--  卡路里  -->
+    <string name="calorie_formula_detail">年龄 男 (体重单位为公斤) 女 (体重单位为公斤) \n 10-17岁 (17.5×体重651)×活动系数 (12.2×体重746)×活动系数 \n 18-29岁 (15.3×体重679)×活动系数(14.7×体重496)×活动系数 \n 30-59岁 (11.6×体重879)×活动系数 (8.7×体重829)×活动系数 \n 60岁- (13.5×体重487)×活动系数(10.5×体重596)×活动系数 \n 男子活动系数 女子活动系数 \n  1.78 1.64  \n如果要减肥的话：每日基本热量消耗-500（最多)就是每天的摄入热量</string>
+    <string name="calorie_formula_detail_show">展开公式</string>
+    <string name="calorie_need_prefix">您的每日所需热量为</string>
+    <string name="calorie_select_prefix">您所选择的食物热量大约为</string>
+    <!--  卡路里  -->
+
+
     <string-array name="sex_array">
         <item>男</item>
         <item>女</item>
     </string-array>
-    <!--个人主页-->
 
-    <!--新鲜事详细-->
-    <string name="new_detail_comment">全部评论</string>
-    <string name="new_detail_add_comment">评论</string>
-    <string name="new_detail_add_favor">收藏</string>
-    <string name="new_detail_add_comment_hint">发表回复...</string>
-    <!--新鲜事详细-->
+    <string-array name="mimian_array">
+        <item>不选</item>
+        <item>大米</item>
+        <item>小米</item>
+        <item>馒头</item>
+        <item>面条</item>
+        <item>玉米面</item>
+        <item>糯米粉</item>
+        <item>面包</item>
+        <item>馄吞皮</item>
+    </string-array>
 
-    <string name="loading_summary">正在努力的加载中...</string>
+    <string-array name="douzhipin_array">
+        <item>不选</item>
+        <item>豆腐</item>
+        <item>豆腐丝</item>
+        <item>豆腐脑</item>
+        <item>豆腐衣</item>
+        <item>豆腐干</item>
+    </string-array>
+
+    <string-array name="drink_array">
+        <item>不选</item>
+        <item>牛奶</item>
+        <item>豆浆</item>
+        <item>啤酒</item>
+    </string-array>
+
+    <string-array name="shucai_array">
+        <item>不选</item>
+        <item>韭黄</item>
+        <item>青椒</item>
+        <item>蘑菇</item>
+        <item>草菇</item>
+        <item>金针菇</item>
+        <item>香菇</item>
+        <item>青豆</item>
+        <item>豆苗</item>
+        <item>蚕豆</item>
+        <item>紫菜</item>
+        <item>萝卜</item>
+        <item>豆芽</item>
+        <item>小红萝卜</item>
+        <item>芹菜</item>
+        <item>黄豆</item>
+        <item>卷心菜</item>
+        <item>黄瓜</item>
+        <item>丝瓜</item>
+        <item>苦瓜</item>
+        <item>茄子</item>
+        <item>花生仁</item>
+        <item>绿豆</item>
+    </string-array>
+
+    <string-array name="meat_array">
+        <item>不选</item>
+        <item>鸡蛋</item>
+        <item>鸭蛋</item>
+        <item>蛋清</item>
+        <item>猪肉</item>
+        <item>猪心</item>
+        <item>猪肝</item>
+        <item>猪肚</item>
+        <item>猪肾</item>
+        <item>牛肉</item>
+        <item>兔肉</item>
+        <item>鸽子</item>
+        <item>鹌鹑</item>
+        <item>鸡肉</item>
+        <item>鸡肝</item>
+        <item>鸡翅</item>
+        <item>鸡爪</item>
+        <item>牛肚</item>
+        <item>羊肉</item>
+        <item>鸭舌</item>
+        <item>鸭肝</item>
+        <item>鸭肉</item>
+    </string-array>
 
 
 </resources>

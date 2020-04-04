@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="5dp"
+    android:paddingTop="5dp"
+    android:paddingEnd="5dp">
+
+    <ImageView
+        android:id="@id/item_shop_image_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/topic_female" />
+
+
+    <TextView
+        android:id="@id/item_shop_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toRightOf="@id/item_shop_image_iv"
+        android:text="@string/app_name"
+        android:textColor="@color/fuxk_base_color_black"
+        android:textSize="@dimen/item_title_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@id/item_shop_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_shop_image_iv"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toRightOf="@id/item_shop_image_iv"
+        android:text="￥5"
+        android:textColor="@color/red"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@id/item_shop_integral_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_shop_image_iv"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:text="积分: 500"
+        android:textColor="@color/tomato"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/item_shop_image_iv"
+        android:layout_marginTop="5dp"
+        android:background="#E3DADA" />
+
+</RelativeLayout>

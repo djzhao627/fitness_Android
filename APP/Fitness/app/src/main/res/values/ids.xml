@@ -10,12 +10,15 @@
     <item name="up_btn_history" type="id" />
     <item name="bottom_train" type="id" />
     <item name="bottom_found" type="id" />
+    <item name="bottom_shop" type="id" />
     <item name="bottom_me" type="id" />
     <item name="bottom_ico_train" type="id" />
     <item name="bottom_ico_found" type="id" />
+    <item name="bottom_ico_shop" type="id" />
     <item name="bottom_ico_me" type="id" />
     <item name="bottom_txt_train" type="id" />
     <item name="bottom_txt_found" type="id" />
+    <item name="bottom_txt_shop" type="id" />
     <item name="bottom_txt_me" type="id" />
     <item name="fragment_activity" type="id" />
     <item name="fragment_container" type="id" />
@@ -38,13 +41,23 @@
     <item name="up_btn_check" type="id" />
     <!--发现-->
 
+    <!--商城-->
+    <item name="item_shop_image_iv" type="id" />
+    <item name="item_shop_title_tv" type="id" />
+    <item name="item_shop_price_tv" type="id" />
+    <item name="item_shop_integral_tv" type="id" />
+    <!--商城-->
+
     <!--我的-->
     <item name="me_homepage_username" type="id"></item>
     <item name="me_homepage" type="id"></item>
     <item name="me_exercise_time" type="id"></item>
     <item name="me_record_days" type="id"></item>
+    <item name="me_item_orders" type="id"></item>
     <item name="me_item_comment" type="id"></item>
     <item name="me_item_reord" type="id"></item>
+    <item name="me_item_metabolize" type="id"></item>
+    <item name="me_item_calorie" type="id"></item>
     <item name="me_item_favor" type="id"></item>
     <item name="me_item_exit" type="id"></item>
     <!--我的-->
@@ -57,19 +70,23 @@
 
     <!--新鲜事-->
     <item name="add_news_btn_release" type="id" />
-    <item name="homepage_tv_username" type="id" />
-    <item name="homepage_et_height" type="id" />
-    <item name="homepage_et_weight" type="id" />
-    <item name="homepage_radio_sex" type="id" />
     <item name="add_news_et_share_title" type="id" />
     <item name="add_news_et_share_content" type="id" />
     <item name="add_news_iv_photo" type="id" />
     <!--新鲜事-->
 
     <!--主页-->
+    <item name="homepage_tv_username" type="id" />
+    <item name="homepage_et_height" type="id" />
+    <item name="homepage_et_weight" type="id" />
+    <item name="homepage_et_target_weight" type="id" />
+    <item name="homepage_et_age" type="id" />
+    <item name="homepage_radio_sex" type="id" />
     <item name="homepage_btn_update" type="id" />
     <item name="homepage_rd_male" type="id" />
     <item name="homepage_rd_female" type="id" />
+    <item name="homepage_tv_wallet" type="id" />
+    <item name="homepage_tv_integral" type="id" />
     <!--主页-->
 
     <!--新鲜事详细-->
@@ -92,12 +109,23 @@
     <item name="news_detail_add_commment_btn" type="id" />
     <!--新鲜事详细-->
 
+    <!--  商品详细  -->
+    <item name="goods_detail_image" type="id" />
+    <item name="goods_detail_stock" type="id" />
+    <item name="goods_detail_price" type="id" />
+    <item name="goods_detail_integral" type="id" />
+    <!--  商品详细  -->
+
     <!--通用项-->
     <item name="item_normal_title" type="id" />
     <item name="item_normal_username" type="id" />
     <item name="normal_list_lv" type="id" />
     <!--通用项-->
 
+    <!--  代谢率  -->
+    <item name="metabolize_amount_text" type="id" />
+    <item name="metabolize_weight_text" type="id" />
+    <!--  代谢率  -->
 
 
     <item name="gridview" type="id" />

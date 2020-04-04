@@ -139,6 +139,50 @@
                 android:layout_marginTop="10dp"
                 android:background="@color/white"
                 android:orientation="vertical">
+                <!--orders-->
+                <LinearLayout
+                    android:id="@id/me_item_orders"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:alpha="0.7"
+                        android:src="@drawable/icon_shop_unpressed" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/me_orders_text"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/ic_common_right_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--orders-->
+                <!--split-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/lightgray" />
+                <!--split-->
                 <!--comment-->
                 <LinearLayout
                     android:id="@id/me_item_comment"
@@ -261,6 +305,96 @@
                     </LinearLayout>
                 </LinearLayout>
                 <!--record-->
+                <!--split-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/lightgray" />
+                <!--split-->
+                <!--record-->
+                <LinearLayout
+                    android:id="@id/me_item_metabolize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/icon_metabolize_dashboard" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/me_metabolize_text"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/ic_common_right_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--record-->
+                <!--split-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@color/lightgray" />
+                <!--split-->
+                <!--calorie-->
+                <LinearLayout
+                    android:id="@id/me_item_calorie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:layout_marginRight="2dp"
+                        android:alpha="0.7"
+                        android:src="@drawable/icon_found_unpressed"
+                        android:layout_marginStart="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/me_calorie_text"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/ic_common_right_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--calorie-->
             </LinearLayout>
             <!--comment/record-->
             <!--exit-->

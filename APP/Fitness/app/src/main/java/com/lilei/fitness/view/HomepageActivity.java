@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -42,11 +43,18 @@ public class HomepageActivity extends BaseActivity implements View.OnClickListen
 
     private EditText height;
     private EditText weight;
+    private EditText targetWeight;
+    private EditText age;
+
+    private TextView walletTV;
+    private TextView integralTV;
 
     private Button update;
 
     private String heightStr;
     private String weightStr;
+    private String targetWeightStr;
+    private String ageStr;
     private String sex;
 
     private MyDialogHandler uiFlusHandler;
@@ -67,7 +75,12 @@ public class HomepageActivity extends BaseActivity implements View.OnClickListen
         update = $(R.id.homepage_btn_update);
         height = $(R.id.homepage_et_height);
         weight = $(R.id.homepage_et_weight);
+        targetWeight = $(R.id.homepage_et_target_weight);
+        age = $(R.id.homepage_et_age);
         username = $(R.id.homepage_tv_username);
+
+        walletTV = $(R.id.homepage_tv_wallet);
+        integralTV = $(R.id.homepage_tv_integral);
 
         maleRadio = $(R.id.homepage_rd_male);
         femaleRadio = $(R.id.homepage_rd_female);
@@ -102,6 +115,10 @@ public class HomepageActivity extends BaseActivity implements View.OnClickListen
         username.setText(Constants.USER.getUsername());
         height.setText(Constants.USER.getHeight() + "");
         weight.setText(Constants.USER.getWeight() + "");
+        targetWeight.setText(Constants.USER.getTargetWeight() + "");
+        age.setText(Constants.USER.getAge() + "");
+        walletTV.setText("余额：" + Constants.USER.getWallet());
+        integralTV.setText("积分：" + Constants.USER.getIntegral());
         if (Constants.USER.getSex().equals("女")) {
             femaleRadio.setChecked(true);
         } else {
@@ -112,12 +129,14 @@ public class HomepageActivity extends BaseActivity implements View.OnClickListen
     private void checkInfo() {
         heightStr = height.getText().toString().trim();
         weightStr = weight.getText().toString().trim();
+        targetWeightStr = targetWeight.getText().toString().trim();
+        ageStr = age.getText().toString().trim();
         sex = "男";
         if (sexGroup.getCheckedRadioButtonId() == R.id.homepage_rd_female) {
             sex = "女";
         }
 
-        if (TextUtils.isEmpty(heightStr) || TextUtils.isEmpty(weightStr)) {
+        if (TextUtils.isEmpty(heightStr) || TextUtils.isEmpty(weightStr) || TextUtils.isEmpty(ageStr)) {
             DisplayToast("不可留空！");
             return;
         }
@@ -135,6 +154,8 @@ public class HomepageActivity extends BaseActivity implements View.OnClickListen
                 .addParams("username", Constants.USER.getUsername())
                 .addParams("height", heightStr)
                 .addParams("weight", weightStr)
+                .addParams("targetWeight", targetWeightStr)
+                .addParams("age", ageStr)
                 .addParams("sex", sex)
                 .id(1)
                 .build()
@@ -163,6 +184,8 @@ public class HomepageActivity extends BaseActivity implements View.OnClickListen
                         Constants.USER.setHeight(user.getHeight());
                         Constants.USER.setWeight(user.getWeight());
                         Constants.USER.setSex(user.getSex());
+                        Constants.USER.setTargetWeight(user.getTargetWeight());
+                        Constants.USER.setAge(user.getAge());
                         user.setPassword(Constants.USER.getPassword());
                         user.setUserId(Constants.USER.getUserId());
                         boolean result = SharedPreferencesUtils.saveUserInfo(mContext, user);

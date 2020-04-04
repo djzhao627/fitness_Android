@@ -78,6 +78,10 @@
             android:name=".view.test.VideoPlayer"
             android:launchMode="singleTop"
             android:screenOrientation="landscape" />
+        <activity android:name=".view.MetabolizeActivity" />
+        <activity android:name=".view.GoodsDetailActivity" />
+        <activity android:name=".view.OrdersListActivity" />
+        <activity android:name=".view.CalorieActivity" />
         <!--test-->
 
     </application>

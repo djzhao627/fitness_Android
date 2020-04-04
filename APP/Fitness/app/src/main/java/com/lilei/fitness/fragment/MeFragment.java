@@ -20,10 +20,13 @@ import com.lilei.fitness.utils.AppManager;
 import com.lilei.fitness.utils.Constants;
 import com.lilei.fitness.utils.SharedPreferencesUtils;
 import com.lilei.fitness.view.BeforeDateCheckActivity;
+import com.lilei.fitness.view.CalorieActivity;
 import com.lilei.fitness.view.CommentsListActivity;
 import com.lilei.fitness.view.FavorsListActivity;
 import com.lilei.fitness.view.HomepageActivity;
 import com.lilei.fitness.view.LoginActivity;
+import com.lilei.fitness.view.MetabolizeActivity;
+import com.lilei.fitness.view.OrdersListActivity;
 import com.lilei.fitness.view.base.BaseActivity;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
@@ -37,8 +40,11 @@ import okhttp3.Call;
 public class MeFragment extends Fragment implements View.OnClickListener {
 
     private LinearLayout homepage;
+    private LinearLayout orders;
     private LinearLayout comment;
     private LinearLayout record;
+    private LinearLayout metabolize;
+    private LinearLayout calorie;
     private LinearLayout favor;
 
     private TextView usernameTV;
@@ -58,8 +64,11 @@ public class MeFragment extends Fragment implements View.OnClickListener {
 
     public void findViewById(View v) {
         homepage = (LinearLayout) v.findViewById(R.id.me_homepage);
+        orders = (LinearLayout) v.findViewById(R.id.me_item_orders);
         comment = (LinearLayout) v.findViewById(R.id.me_item_comment);
         record = (LinearLayout) v.findViewById(R.id.me_item_reord);
+        metabolize = (LinearLayout) v.findViewById(R.id.me_item_metabolize);
+        calorie = (LinearLayout) v.findViewById(R.id.me_item_calorie);
         favor = (LinearLayout) v.findViewById(R.id.me_item_favor);
 
         usernameTV = (TextView) v.findViewById(R.id.me_homepage_username);
@@ -70,8 +79,11 @@ public class MeFragment extends Fragment implements View.OnClickListener {
 
     public void initView() {
         homepage.setOnClickListener(this);
+        orders.setOnClickListener(this);
         comment.setOnClickListener(this);
         record.setOnClickListener(this);
+        metabolize.setOnClickListener(this);
+        calorie.setOnClickListener(this);
         favor.setOnClickListener(this);
 
         exit.setOnClickListener(this);
@@ -108,11 +120,20 @@ public class MeFragment extends Fragment implements View.OnClickListener {
             case R.id.me_item_comment:
                 startActivity(new Intent(getActivity(), CommentsListActivity.class));
                 break;
+            case R.id.me_item_orders:
+                startActivity(new Intent(getActivity(), OrdersListActivity.class));
+                break;
             case R.id.me_item_favor:
                 startActivity(new Intent(getActivity(), FavorsListActivity.class));
                 break;
             case R.id.me_item_reord:
                 startActivity(new Intent(getActivity(), BeforeDateCheckActivity.class));
+                break;
+            case R.id.me_item_metabolize:
+                startActivity(new Intent(getActivity(), MetabolizeActivity.class));
+                break;
+            case R.id.me_item_calorie:
+                startActivity(new Intent(getActivity(), CalorieActivity.class));
                 break;
             case R.id.me_item_exit:
                 SystemClock.sleep(500);

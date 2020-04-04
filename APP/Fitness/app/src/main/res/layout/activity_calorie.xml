@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_custom" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/aliceblue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <!--top-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/title_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:text="@string/metabolize_formula" />
+
+
+                <TextView
+                    android:id="@+id/formula"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:text="@string/calorie_formula_detail_show"
+                    android:lineSpacingExtra="5dp"
+                    android:textSize="10sp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+            <!--top-->
+            <!--change-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/metabolize_weight" />
+
+                <EditText
+                    android:id="@id/homepage_et_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/metabolize_age" />
+
+                <EditText
+                    android:id="@id/homepage_et_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/sex" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@id/homepage_radio_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@id/homepage_rd_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dd_dimen_90px"
+                            android:layout_margin="@dimen/dd_dimen_6px"
+                            android:checked="true"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/dd_dimen_6px"
+                            android:paddingRight="@dimen/dd_dimen_6px"
+                            android:text="@string/male"></RadioButton>
+
+                        <RadioButton
+                            android:id="@id/homepage_rd_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dd_dimen_90px"
+                            android:layout_margin="@dimen/dd_dimen_6px"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/dd_dimen_6px"
+                            android:paddingRight="@dimen/dd_dimen_6px"
+                            android:text="@string/female"></RadioButton>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/mistyrose" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="米面类" />
+                    <Spinner
+                        android:id="@+id/select_mimain"
+                        android:layout_width="wrap_content"
+                        android:entries="@array/mimian_array"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="豆制品类" />
+                    <Spinner
+                        android:id="@+id/select_douzhi"
+                        android:layout_width="wrap_content"
+                        android:entries="@array/douzhipin_array"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="蛋肉类" />
+                    <Spinner
+                        android:id="@+id/select_meat"
+                        android:layout_width="wrap_content"
+                        android:entries="@array/meat_array"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="饮料类" />
+                    <Spinner
+                        android:id="@+id/select_drink"
+                        android:layout_width="wrap_content"
+                        android:entries="@array/drink_array"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="蔬菜类" />
+                    <Spinner
+                        android:id="@+id/select_shucai"
+                        android:layout_width="wrap_content"
+                        android:entries="@array/shucai_array"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/login_name_edit_color"
+                        android:gravity="center"
+                        android:text="@string/calorie_need_prefix"/>
+
+                    <TextView
+                        android:id="@id/metabolize_amount_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold|italic"
+                        android:textSize="20sp"
+                        android:textColor="@color/bottom_tab_pressed"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:text="0"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/login_name_edit_color"
+                        android:gravity="center"
+                        android:text="@string/metabolize_metabolize_postfix"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/login_name_edit_color"
+                        android:gravity="center"
+                        android:text="@string/calorie_select_prefix"/>
+
+                    <TextView
+                        android:id="@id/metabolize_weight_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold|italic"
+                        android:textSize="20sp"
+                        android:textColor="@color/bottom_tab_pressed"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:text="0"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/login_name_edit_color"
+                        android:gravity="center"
+                        android:text="@string/metabolize_metabolize_postfix"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--change-->
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@id/homepage_btn_update"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="@dimen/login_comfirm_button_margin_top"
+        android:layout_marginLeft="@dimen/login_comfirm_button_margin_top"
+        android:layout_marginRight="@dimen/login_comfirm_button_margin_top"
+        android:layout_marginTop="@dimen/login_comfirm_button_margin_top"
+        android:background="@drawable/btn_red_bg"
+        android:gravity="center"
+        android:text="@string/metabolize_btn_calc"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_comfirm_button_text_size" />
+
+</LinearLayout>

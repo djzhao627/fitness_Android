@@ -52,6 +52,30 @@
             android:textSize="@dimen/bottom_txt_size" />
     </LinearLayout>
     <!--found-->
+    <!--shop-->
+    <LinearLayout
+        android:id="@id/bottom_shop"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@id/bottom_ico_shop"
+            android:layout_width="@dimen/bottom_icon_size"
+            android:layout_height="@dimen/bottom_icon_size"
+            android:src="@drawable/icon_shop_unpressed" />
+
+        <TextView
+            android:id="@id/bottom_txt_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bottom_shop"
+            android:textColor="@color/bottom_tab_normal"
+            android:textSize="@dimen/bottom_txt_size" />
+    </LinearLayout>
+    <!--shop-->
     <!--me-->
     <LinearLayout
         android:id="@id/bottom_me"

@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.lilei.fitness.R;
 import com.lilei.fitness.fragment.FoundFragment;
 import com.lilei.fitness.fragment.MeFragment;
+import com.lilei.fitness.fragment.ShopFragment;
 import com.lilei.fitness.fragment.TrainingFragment;
 import com.lilei.fitness.utils.AppManager;
 import com.lilei.fitness.view.base.BaseActivity;
@@ -21,21 +22,25 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private LinearLayout tabTrain;
     private LinearLayout tabFound;
+    private LinearLayout tabShop;
     private LinearLayout tabMe;
 
     private ImageView btnCheck;
     private ImageView btnAddNews;
     private ImageView icoTrain;
     private ImageView icoFound;
+    private ImageView icoShop;
     private ImageView icoMe;
 
     private TextView txtTrain;
     private TextView txtFound;
+    private TextView txtShop;
     private TextView txtMe;
     private TextView txtTitle;
 
     private TrainingFragment trainingFragment;
     private FoundFragment foundFragment;
+    private ShopFragment shopFragment;
     private MeFragment meFragment;
     private long mExitTime;
 
@@ -51,16 +56,19 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     protected void findViewById() {
         tabTrain = $(R.id.bottom_train);
         tabFound = $(R.id.bottom_found);
+        tabShop = $(R.id.bottom_shop);
         tabMe = $(R.id.bottom_me);
         btnCheck = $(R.id.up_btn_check);
         btnAddNews = $(R.id.found_new_add);
 
         icoTrain = $(R.id.bottom_ico_train);
         icoFound = $(R.id.bottom_ico_found);
+        icoShop = $(R.id.bottom_ico_shop);
         icoMe = $(R.id.bottom_ico_me);
 
         txtTrain = $(R.id.bottom_txt_train);
         txtFound = $(R.id.bottom_txt_found);
+        txtShop = $(R.id.bottom_txt_shop);
         txtMe = $(R.id.bottom_txt_me);
         txtTitle = $(R.id.titleText);
     }
@@ -69,12 +77,14 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     protected void initView() {
         tabTrain.setOnClickListener(this);
         tabFound.setOnClickListener(this);
+        tabShop.setOnClickListener(this);
         tabMe.setOnClickListener(this);
         btnCheck.setOnClickListener(this);
         btnAddNews.setOnClickListener(this);
 
         trainingFragment = new TrainingFragment();
         foundFragment = new FoundFragment();
+        shopFragment = new ShopFragment();
         meFragment = new MeFragment();
 
         refreashFragment(R.id.bottom_train);
@@ -93,6 +103,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 changeTabState(R.id.bottom_found);
                 changeTitle(R.string.title_found);
                 refreashFragment(R.id.bottom_found);
+                break;
+            case R.id.bottom_shop:
+                topButtonChange(0);
+                changeTabState(R.id.bottom_shop);
+                changeTitle(R.string.title_shop);
+                refreashFragment(R.id.bottom_shop);
                 break;
             case R.id.bottom_me:
                 topButtonChange(0);
@@ -140,6 +156,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case R.id.bottom_found:
                 transaction.replace(R.id.fragment_container, foundFragment);
                 break;
+            case R.id.bottom_shop:
+                transaction.replace(R.id.fragment_container, shopFragment);
+                break;
             case R.id.bottom_me:
                 transaction.replace(R.id.fragment_container, meFragment);
                 break;
@@ -161,6 +180,13 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         } else {
             icoFound.setImageResource(R.drawable.icon_found_unpressed);
             txtFound.setTextColor(getResources().getColor(R.color.bottom_tab_normal));
+        }
+        if (tabId == R.id.bottom_shop) {
+            icoShop.setImageResource(R.drawable.icon_shop_pressed);
+            txtShop.setTextColor(getResources().getColor(R.color.bottom_tab_pressed));
+        } else {
+            icoShop.setImageResource(R.drawable.icon_shop_unpressed);
+            txtShop.setTextColor(getResources().getColor(R.color.bottom_tab_normal));
         }
         if (tabId == R.id.bottom_me) {
             icoMe.setImageResource(R.drawable.icon_me_pressed);

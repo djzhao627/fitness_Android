@@ -233,6 +233,70 @@
                     android:paddingRight="@dimen/dd_dimen_6px" />
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fuxk_base_color_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dd_dimen_30px"
+                android:paddingRight="@dimen/dd_dimen_30px"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="@dimen/dd_dimen_200px"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/target_weight"
+                    android:textColor="@color/fuxk_base_color_gray_black" />
+
+                <EditText
+                    android:id="@+id/reg_et_target_weight"
+                    style="@style/Fuxk_Base_Content_28_Style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_90px"
+                    android:layout_margin="@dimen/dd_dimen_6px"
+                    android:background="@drawable/bg_edit_text_manage"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_target_weight"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/dd_dimen_6px"
+                    android:paddingRight="@dimen/dd_dimen_6px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fuxk_base_color_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dd_dimen_30px"
+                android:paddingRight="@dimen/dd_dimen_30px"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="@dimen/dd_dimen_200px"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/age"
+                    android:textColor="@color/fuxk_base_color_gray_black" />
+
+                <EditText
+                    android:id="@+id/reg_et_age"
+                    style="@style/Fuxk_Base_Content_28_Style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dd_dimen_90px"
+                    android:layout_margin="@dimen/dd_dimen_6px"
+                    android:background="@drawable/bg_edit_text_manage"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_age"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/dd_dimen_6px"
+                    android:paddingRight="@dimen/dd_dimen_6px" />
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 

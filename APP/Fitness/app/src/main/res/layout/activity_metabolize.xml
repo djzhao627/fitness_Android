@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
 
     <include layout="@layout/title_custom" />
@@ -11,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@color/white">
+        android:background="@color/aliceblue">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,57 +27,25 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/man"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:maxWidth="20dp"
-                    android:src="@drawable/fitness_round" />
-
-                <LinearLayout
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:orientation="horizontal">
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:text="@string/metabolize_formula" />
 
-                    <TextView
-                        android:id="@id/homepage_tv_username"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:padding="10dp"
-                        android:text="@string/app_name"
-                        android:textColor="@color/white" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/homepage_can_not_modify"
-                        android:textColor="@color/lightblue"
-                        android:textSize="10sp" />
-                </LinearLayout>
-
-                <LinearLayout
+                <TextView
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_marginBottom="5dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@id/homepage_tv_wallet"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        tools:text="余额：1000"
-                        android:textColor="@color/white" />
-
-                    <TextView
-                        android:id="@id/homepage_tv_integral"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        tools:text="积分：1000"
-                        android:layout_marginLeft="20dp"
-                        android:textColor="@color/white" />
-                </LinearLayout>
+                    android:padding="10dp"
+                    android:text="@string/metabolize_formula_detail"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="@color/white" />
             </LinearLayout>
             <!--top-->
             <!--change-->
@@ -94,7 +61,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:text="@string/height" />
+                    android:text="@string/metabolize_height" />
 
                 <EditText
                     android:id="@id/homepage_et_height"
@@ -106,7 +73,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:text="@string/weight" />
+                    android:text="@string/metabolize_weight" />
 
                 <EditText
                     android:id="@id/homepage_et_weight"
@@ -118,19 +85,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:text="@string/target_weight" />
-
-                <EditText
-                    android:id="@id/homepage_et_target_weight"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:text="@string/age" />
+                    android:text="@string/metabolize_age" />
 
                 <EditText
                     android:id="@id/homepage_et_age"
@@ -179,6 +134,77 @@
                             android:text="@string/female"></RadioButton>
                     </RadioGroup>
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/login_name_edit_color"
+                        android:gravity="center"
+                        android:text="@string/metabolize_metabolize_prefix"/>
+
+                    <TextView
+                        android:id="@id/metabolize_amount_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold|italic"
+                        android:textSize="20sp"
+                        android:textColor="@color/bottom_tab_pressed"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:text="0"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/login_name_edit_color"
+                        android:gravity="center"
+                        android:text="@string/metabolize_metabolize_postfix"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/login_name_edit_color"
+                        android:gravity="center"
+                        android:text="@string/metabolize_weight_prefix"/>
+
+                    <TextView
+                        android:id="@id/metabolize_weight_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold|italic"
+                        android:textSize="20sp"
+                        android:textColor="@color/bottom_tab_pressed"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:text="0"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/login_name_edit_color"
+                        android:gravity="center"
+                        android:text="@string/metabolize_weight_postfix"/>
+                </LinearLayout>
+
             </LinearLayout>
             <!--change-->
         </LinearLayout>
@@ -194,7 +220,7 @@
         android:layout_marginTop="@dimen/login_comfirm_button_margin_top"
         android:background="@drawable/btn_red_bg"
         android:gravity="center"
-        android:text="@string/homepage_btn_update"
+        android:text="@string/metabolize_btn_calc"
         android:textColor="@color/white"
         android:textSize="@dimen/login_comfirm_button_text_size" />
 

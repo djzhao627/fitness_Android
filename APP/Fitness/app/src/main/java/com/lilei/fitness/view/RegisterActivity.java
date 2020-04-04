@@ -36,6 +36,8 @@ public class RegisterActivity extends BaseActivity implements OnClickListener {
     private EditText et_repassword;
     private EditText et_height;
     private EditText et_weight;
+    private EditText et_target_weight;
+    private EditText et_age;
     private Button register_login;
     private RadioGroup radio_sex;
 
@@ -70,6 +72,8 @@ public class RegisterActivity extends BaseActivity implements OnClickListener {
         et_repassword = $(R.id.reg_et_repassword);
         et_height = $(R.id.reg_et_height);
         et_weight = $(R.id.reg_et_weight);
+        et_target_weight = $(R.id.reg_et_target_weight);
+        et_age = $(R.id.reg_et_age);
 
         this.radio_sex = (RadioGroup) findViewById(R.id.radio_sex);
         this.register_login = (Button) findViewById(R.id.reg_btn_register);
@@ -95,6 +99,8 @@ public class RegisterActivity extends BaseActivity implements OnClickListener {
         String repassword = et_repassword.getText().toString().trim();
         String height = et_height.getText().toString().trim();
         String weight = et_weight.getText().toString().trim();
+        String targetWeight = et_target_weight.getText().toString().trim();
+        String age = et_age.getText().toString().trim();
         String sex = "女";
         if (radio_sex.getCheckedRadioButtonId() == R.id.reg_rd_male) {
             sex = "男";
@@ -120,6 +126,8 @@ public class RegisterActivity extends BaseActivity implements OnClickListener {
                 .addParams("sex", sex)
                 .addParams("height", height)
                 .addParams("weight", weight)
+                .addParams("targetWeight", targetWeight)
+                .addParams("age", age)
                 .id(1)
                 .build()
                 .execute(new MyStringCallback());
